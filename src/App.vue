@@ -5,13 +5,14 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
 
     <div class="wrapper">
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/posts">Posts</RouterLink>
         <RouterLink to="/user">User</RouterLink>
+        <RouterLink to="/login">Login</RouterLink>
       </nav>
     </div>
   </header>
@@ -20,19 +21,17 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style>
-@import '@/assets/base.css';
-
-#app {
-  max-width: 1280px;
+/* @import '@/assets/base.css';
+@import '@/assets/style.css'; */
+@import '@/assets/bootstrap.min.css';
+/* #app {
   margin: 0 auto;
   padding: 2rem;
-
   font-weight: normal;
 }
 
 header {
   line-height: 1.5;
-  max-height: 100vh;
 }
 
 .logo {
@@ -83,5 +82,5 @@ nav a:first-of-type {
     display: flex;
     place-items: center;
   }
-}
+} */
 </style>
