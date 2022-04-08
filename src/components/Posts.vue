@@ -1,9 +1,9 @@
 <template>
   <div class="item">
-  <ul class = "card border-light p-5 "><!-- spreed, propage et decompacte-->
-    <li class="text-sucess border mb-2" v-for = "post in posts" :key="post.id"><router-link :to = "{ path:'/post/'+ post.id, query:{...post}}"
->{{post.title}}</router-link></li> <!-- passe en un objet quand on clique dessus-->
-    <span class="border-bottom"></span>
+  <ul class = "card border-light px-4 py-3 "><!-- spreed, propage et decompacte-->
+    <li class="text-success my-auto mb-2" v-for = "post in posts" :key="post.id"><router-link :to = "{ path:'/post/'+ post.id, query:{...post}}"
+>{{post.title}}</router-link> 
+    </li> <!-- passe en un objet quand on clique dessus-->
   </ul>
     
   </div>
@@ -25,8 +25,14 @@ const posts = ref(
 
 <style scoped>
 
-.border {
-  border-bottom:2px solid;
+
+li {
+  border-bottom:3px solid;
+  padding :1rem ;
 }
 
+li:last-child {
+border-bottom:none ;
+padding:0 ;
+  }
 </style>

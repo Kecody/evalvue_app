@@ -1,7 +1,7 @@
 <template>
   <div class="card border-light p-1 fade-in-fade-out">
     <h1 class ="mt-3">WELCOME</h1>
-   <p>Bienvenue chez <br> <span class="text-success">VaporTechnology</span></p>
+    <p>Bienvenue chez <br> <span class="text-success">VaporTechnology</span></p>
   </div>
 </template>
 

@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../components/Home.vue'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(process.env.BASE_URL),
   routes: [
     {
       path: '/',
@@ -47,7 +47,7 @@ const router = createRouter({
       component:() => import('../components/Iceberg.vue')
     },
     {
-      path: '/post/:id',
+      path: '/post/:id',// parametre variable, la librairie va recupere le paramètre dans une variable du meme nom
       name: 'post',
       component:() => import('../components/Post.vue'),
       props:true,
