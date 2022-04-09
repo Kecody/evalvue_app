@@ -7,7 +7,7 @@
     </form>
 </template>
 
-<script>
+<script>//envoie la methods submit à l'élément parent et la récupère dans l'élément template de l'enfant
  export default {
      data() {
          return {
@@ -15,7 +15,7 @@
              password:""
          }
      },
-     methods: {
+     methods: {//créer un evenement personnalisé
          submit(){ this.$emit("submit",{
              email: this.email,
              password: this.password,
@@ -26,7 +26,9 @@
 
 </script>
 
+
 <style scoped>
+/*style scoped propre a la page*/
     form {
         max-width: 25rem;
         max-height: 50vh;

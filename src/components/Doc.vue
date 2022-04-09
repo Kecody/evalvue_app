@@ -1,7 +1,7 @@
 <template>
   <div class="card border-light">
    <li class ="mt-2 mb-2 pb-3 px-2 mx-2 ">Mise en production</li>
-   <a type = "button" class="text-success" href="" target="_blank">En savoir plus</a>
+   <a  class="text-success" href="/Mep" target="_blank">En savoir plus</a>
    <li class ="mt-2 mb-2 pb-3 px-2 mx-2 ">MangoDB</li>
    <a  class="text-success" href="https://www.mongodb.com/fr-fr" target="_blank">En savoir plus</a>
    <li class ="mt-2 mb-2 pb-3 px-2 mx-2 ">MySQL</li>

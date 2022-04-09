@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../components/Home.vue'
-
+//configuration de nos route
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes: [
@@ -51,6 +51,11 @@ const router = createRouter({
       name: 'post',
       component:() => import('../components/Post.vue'),
       props:true,
+    },
+    {
+      path: '/mep',// parametre variable, la librairie va recupere le paramètre dans une variable du meme nom
+      name: 'mep',
+      component:() => import('../components/Mep.vue'),
     },
   ]
 })
